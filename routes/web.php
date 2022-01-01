@@ -21,6 +21,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about_us'])->name('about_us');
+Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about_us'])->name('about_us');
+Route::get('/shop', [App\Http\Controllers\ShopController::class, 'index'])->name('shop');
 
 Auth::routes();
 
