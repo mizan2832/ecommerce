@@ -21,7 +21,8 @@
             <div class=" main-content-area">
                 <div class="wrap-login-item ">
                     <div class="register-form form-item ">
-                        <form class="form-stl" action="#" name="frm-login" method="get" >
+                        <form action="{{ route('register') }}" class="form-stl" action="#" name="frm-login" method="post" >
+                            @csrf
                             <fieldset class="wrap-title">
                                 <h3 class="form-title">Create an account</h3>
                             </fieldset>									
@@ -49,6 +50,13 @@
                                 <label for="frm-reg-email">Address*</label>
                                 <textarea type="text" id="address" name="address" cols="60" rows="4" placeholder="Your address"> </textarea>
                             </fieldset>
+                            <fieldset class="formfield">
+                                <label for="frm-reg-email">Payment Type*</label>
+                                <select name="payment_type" id="payment_type">
+                                    <option value="bekash">Bekash</option>
+                                    <option value="cashOn">Cash on Delivery</option>
+                                </select>
+                            </fieldset>
                           
                           
                             <fieldset class="wrap-title">
@@ -56,11 +64,11 @@
                             </fieldset>
                             <fieldset class="wrap-input item-width-in-half left-item ">
                                 <label for="frm-reg-pass">Password *</label>
-                                <input type="text" id="password" name="password" placeholder="Password">
+                                <input type="password" id="password" name="password" placeholder="Password">
                             </fieldset>
                             <fieldset class="wrap-input item-width-in-half ">
                                 <label for="frm-reg-cfpass">Confirm Password *</label>
-                                <input type="text" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
+                                <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
                             </fieldset>
                             <input type="submit" class="btn btn-sign" value="Register" name="register">
                         </form>
