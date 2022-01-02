@@ -1,5 +1,12 @@
 @extends('front.welcome')
 @section('title','Registration')
+@push('css')
+<style>
+    .formfield * {
+  vertical-align: middle;
+}
+</style>
+@endpush
 @section('content')
 <div class="container">
 
@@ -17,31 +24,43 @@
                         <form class="form-stl" action="#" name="frm-login" method="get" >
                             <fieldset class="wrap-title">
                                 <h3 class="form-title">Create an account</h3>
-                                <h4 class="form-subtitle">Personal infomation</h4>
                             </fieldset>									
                             <fieldset class="wrap-input">
                                 <label for="frm-reg-lname">Name*</label>
-                                <input type="text" id="frm-reg-lname" name="reg-lname" placeholder="Last name*">
+                                <input type="text" id="frm-reg-lname" name="name" placeholder="Your name*">
                             </fieldset>
                             <fieldset class="wrap-input">
                                 <label for="frm-reg-email">Email Address*</label>
-                                <input type="email" id="frm-reg-email" name="reg-email" placeholder="Email address">
+                                <input type="email" id="frm-reg-email" name="email" placeholder="Email address">
                             </fieldset>
-                            <fieldset class="wrap-functions ">
-                                <label class="remember-field">
-                                    <input name="newletter" id="new-letter" value="forever" type="checkbox"><span>Sign Up for Newsletter</span>
-                                </label>
+                            <fieldset class="wrap-input">
+                                <label for="frm-reg-email">Mobile Number*</label>
+                                <input type="text" id="frm-reg-email" name="number" placeholder="Contact number">
                             </fieldset>
+                            <fieldset class="wrap-input">
+                                <label for="frm-reg-email">Country*</label>
+                                <input type="text" id="frm-reg-email" name="country" placeholder="Your Country">
+                            </fieldset>
+                            <fieldset class="wrap-input">
+                                <label for="frm-reg-email">City*</label>
+                                <input type="text" id="frm-reg-email" name="city" placeholder="Your City">
+                            </fieldset>
+                            <fieldset class="formfield">
+                                <label for="frm-reg-email">Address*</label>
+                                <textarea type="text" id="address" name="address" cols="60" rows="4" placeholder="Your address"> </textarea>
+                            </fieldset>
+                          
+                          
                             <fieldset class="wrap-title">
                                 <h3 class="form-title">Login Information</h3>
                             </fieldset>
                             <fieldset class="wrap-input item-width-in-half left-item ">
                                 <label for="frm-reg-pass">Password *</label>
-                                <input type="text" id="frm-reg-pass" name="reg-pass" placeholder="Password">
+                                <input type="text" id="password" name="password" placeholder="Password">
                             </fieldset>
                             <fieldset class="wrap-input item-width-in-half ">
                                 <label for="frm-reg-cfpass">Confirm Password *</label>
-                                <input type="text" id="frm-reg-cfpass" name="reg-cfpass" placeholder="Confirm Password">
+                                <input type="text" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
                             </fieldset>
                             <input type="submit" class="btn btn-sign" value="Register" name="register">
                         </form>
