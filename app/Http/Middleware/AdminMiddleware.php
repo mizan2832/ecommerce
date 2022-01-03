@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Auth;
 
 class AdminMiddleware
 {
@@ -16,6 +17,17 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if (Auth::check() && Auth::user()->role->id == 1)
+        {
+            return $next($request);
+        }
+        elseif (Auth::check() && Auth::user()->role->id == 2)
+        {
+            return $next($request);
+        }
+        
+         else {
+            return redirect()->route('home');
+        }
     }
 }
