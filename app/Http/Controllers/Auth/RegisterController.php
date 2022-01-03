@@ -83,11 +83,11 @@ class RegisterController extends Controller
         ]);
     }
 
-    // protected function redirectTo()
-    //     {
-    //         if (auth()->user()->role_id == 1) {
-    //             return '/admin';
-    //         }
-    //         return '/home';
-    //     }
+    protected function redirectTo()
+        {
+            if (auth()->user()->role_id == 1) {
+                return '/home';
+            }
+            return '/home';
+        }
 }
