@@ -12,6 +12,18 @@
                     </div>
                     <div class="topbar-menu right-menu">
                         <ul>
+                            @if (Auth::check())
+                                <li class="menu-item"><a title="Register or Login" href="#"> {{ Auth::user()->name }}</a></li>
+                                <li class="menu-item">
+                                    <a  href="{{ route('logout') }}"  onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();" class="dropdown-item notify-item">
+                                        <span>Logout</span>
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </li>
+                          @else
                             <li class="menu-item" ><a title="Register or Login" href="{{ route('login') }}">Login</a></li>
                             <li class="menu-item" ><a title="Register or Login"  href="{{ route('register') }}">Register</a></li>
                             <li class="menu-item lang-menu menu-item-has-children parent">
@@ -37,6 +49,7 @@
                                     </li>
                                 </ul>
                             </li>
+                            @endif
                         </ul>
                     </div>
                 </div>
