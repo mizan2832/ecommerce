@@ -20,7 +20,7 @@
                     </a>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="{{ route('add-user') }}"> <i class="fas fa-user-plus"></i>Add User</a>
+                            <a href="{{ route('admin') }}"> <i class="fas fa-user-plus"></i>Add User</a>
 
                         </li>
                         <li>
@@ -45,7 +45,7 @@
                     </a>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="{{ route('daily-attendance.index') }}"> <i class="far fa-file-powerpoint"></i>Daily Attendance</a>
+                            <a href="#"> <i class="far fa-file-powerpoint"></i>Daily Attendance</a>
 
                         </li>
                         <li>
@@ -61,23 +61,23 @@
                     </a>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="{{ route('employee.create') }}"><i class="fas fa-user-plus"></i> Add Employee</a>
+                            <a href="#"><i class="fas fa-user-plus"></i> Add Employee</a>
 
                         </li>
                         <li>
-                            <a href="{{ route('employee.index') }}"> <i class="fas fa-th-list"></i>Employee List</a>
+                            <a href="#"> <i class="fas fa-th-list"></i>Employee List</a>
                         </li>
                     </ul>
                 </li>
 
                 <li class="submenu">
-                    <a href="{{ route('department.index') }}">
+                    <a href="#">
                         <i class="fas fa-building"></i>
                         <span> Departments </span>
                     </a>
                 </li>
                 <li class="submenu">
-                    <a href="{{route('section.index')}}">
+                    <a href="#">
                         <i class="fas fa-cut"></i>
                         <span> Sections </span>
                     </a>
@@ -105,7 +105,7 @@
                     </a>
                 </li>
                 <li class="submenu">
-                    <a href="{{route('holiday')}}">
+                    <a href="#">
                         <i class="fas fa-adjust"></i>
                         <span> Holidays </span>
                     </a>

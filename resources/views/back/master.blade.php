@@ -1,14 +1,14 @@
 
-@include('front.includes.head')
+@include('back.includes.head')
 <body class="adminbody">
 
     <div id="main">
 
-     @include('front.includes.header')
+     @include('back.includes.header')
         <!-- End Navigation -->
 
         <!-- Left Sidebar -->
-       @include('front.includes.sidebar')
+       @include('back.includes.sidebar')
         <!-- End Sidebar -->
 
         <div class="content-page">
@@ -25,7 +25,7 @@
         </div>
         <!-- END content-page -->
 
-       @include('front.includes.footer')
+       @include('back.includes.footer')
     <!-- END Java Script for this page -->
 
 </body>

@@ -123,51 +123,12 @@
             </li>
 
 
-            <li class="list-inline-item dropdown notif">
-                <a class="nav-link dropdown-toggle arrow-none" data-toggle="dropdown" href="#" aria-haspopup="false" aria-expanded="false">
-                    <i class="fas fa-cog"></i>
-                </a>
-
-                <div class="dropdown-menu dropdown-menu-right dropdown-arrow dropdown-arrow-success dropdown-sm">
-                    <!-- item-->
-                    <div class="dropdown-item noti-title">
-                        <h5>
-                            <small>Settings</small>
-                        </h5>
-                    </div>
-
-                    <!-- item-->
-                    <a href="#" class="dropdown-item notify-item">
-                        <p class="notify-details ml-0">
-                            <i class="fas fa-cog"></i>
-                            <b>Settings 1</b>
-                        </p>
-                    </a>
-
-                    <!-- item-->
-                    <a href="#" class="dropdown-item notify-item">
-                        <p class="notify-details ml-0">
-                            <i class="fas fa-cog"></i>
-                            <b>Settings 2</b>
-                        </p>
-                    </a>
-
-                    <!-- item-->
-                    <a href="#" class="dropdown-item notify-item">
-                        <p class="notify-details ml-0">
-                            <i class="fas fa-cog"></i>
-                            <b>Settings 3</b>
-                        </p>
-                    </a>
-
-                </div>
-
-            </li>
+         
 
 
             <li class="list-inline-item dropdown notif">
                 <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" aria-haspopup="false" aria-expanded="false">
-                    <img src="{{ asset('front/assets/images/avatars/admin.png') }} " alt="Profile image" class="avatar-rounded">
+                    <img src="{{ asset('back/assets/images/avatars/admin.png') }} " alt="Profile image" class="avatar-rounded">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                     <!-- item-->
@@ -182,10 +143,10 @@
                     </div>
 
                     <!-- item-->
-                    <a href="profile.html" class="dropdown-item notify-item">
-                        <i class="fas fa-user"></i>
-                        <span>Profile</span>
-                    </a>
+                        <a href="profile.html" class="dropdown-item notify-item">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
                         <a href="{{ route('logout') }}"  onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();" class="dropdown-item notify-item">
                             <i class="fas fa-power-off"></i>

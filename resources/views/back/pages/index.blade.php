@@ -1,4 +1,4 @@
-@extends('front.master')
+@extends('back.master')
 @section('title','X HR')
 @section('content')
 <div class="container-fluid">

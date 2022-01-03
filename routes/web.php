@@ -26,8 +26,6 @@ Route::get('/shop', [App\Http\Controllers\ShopController::class, 'index'])->name
 Route::get('/cart', [App\Http\Controllers\CartController::class, 'index'])->name('cart');
 Route::get('/checkout', [App\Http\Controllers\CheckoutController::class, 'index'])->name('checkout');
 
-
-
 Route::group(['middleware' => 'admin'], function()
 {
     Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
