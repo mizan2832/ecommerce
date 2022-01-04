@@ -118,23 +118,13 @@
                     <a href="#" class="dropdown-item notify-item notify-all">
                         View All Allerts
                     </a>
-
                 </div>
             </li>
-
-
-         
-
-
             <li class="list-inline-item dropdown notif">
                 <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" aria-haspopup="false" aria-expanded="false">
                     <img src="{{ asset('back/assets/images/avatars/admin.png') }} " alt="Profile image" class="avatar-rounded">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
-                    <!-- item-->
-                  
-
-                    <!-- item-->
                     @if (Auth::check())
                     <div class="dropdown-item noti-title">
                         <h5 class="text-overflow">
