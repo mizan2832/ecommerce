@@ -5,7 +5,7 @@
     <div class="headerbar-left">
         <a href="index.html" class="logo">
             <img alt="Logo" src="{{ asset('front/assets/images/logo.png') }} " />
-            <span>HR Admin</span>
+            <span>Ecommerce Admin</span>
         </a>
     </div>
 

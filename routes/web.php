@@ -29,6 +29,7 @@ Route::get('/checkout', [App\Http\Controllers\CheckoutController::class, 'index'
 Route::group(['middleware' => 'admin'], function()
 {
     Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+    Route::get('/product/create', [App\Http\Controllers\ProductController::class, 'create'])->name('product.create');
 
 });
 

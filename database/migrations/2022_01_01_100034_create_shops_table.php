@@ -13,17 +13,11 @@ class CreateShopsTable extends Migration
      */
     public function up()
     {
-        Schema::create('shops', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->integer('category_id');
             $table->integer('subcategory_id');
             $table->string('name');
-            $table->string('photo');
-            $table->decimal('price');
-            $table->integer('color_id')->nullable();
-            $table->integer('size_id')->nullable();
-            $table->integer('discount')->nullable();
-            $table->string('description');
             $table->timestamps();
         });
     }

@@ -45,7 +45,7 @@
                     </a>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="{{ route('product') }}"> <i class="far fa-file-powerpoint"></i>Add Product</a>
+                            <a href="{{ route('product.create') }}"> <i class="far fa-file-powerpoint"></i>Add Product</a>
 
                         </li>
                         <li>
