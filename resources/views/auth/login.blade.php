@@ -1,5 +1,13 @@
 @extends('front.welcome')
 @section('title','Login')
+@push('css')
+    <style>
+        .socialite button{
+            display: block;
+            justify-content: center;
+        }
+    </style>
+@endpush
 @section('content')
 <div class="container">
 
@@ -10,10 +18,20 @@
         </ul>
     </div>
     <div class="row">
+        <div class="socialite"></div>
         <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12 col-md-offset-3">
             <div class=" main-content-area">
-                <div class="wrap-login-item ">						
+               
+
+                <div class="wrap-login-item ">		
+
                     <div class="login-form form-item form-stl">
+                        <div class="socialite">
+                            <button class="btn btn-primary">Login with Google</button>
+                            <button class="btn btn-success">Login with Google</button>
+                            <button class="btn btn-info">Login with Google</button>
+                        </div>
+                       
                         <form method="POST" action="{{ route('login') }}" name="frm-login">
                             @csrf
                             <fieldset class="wrap-title">
